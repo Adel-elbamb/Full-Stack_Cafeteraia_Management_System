@@ -9,10 +9,7 @@ if ($conn->connect_error) {
 }
 ?>
 <!-- func -->
- 
-
 <?php
-
 function getProducts() {
     global $conn;
     return $conn->query("SELECT * FROM products");
@@ -33,14 +30,6 @@ function createOrder($user_id, $total_price) {
     $stmt->close();
 }
 
-// function getLatestOrder($user_id) {
-//     global $conn;
-//     return $conn->query("SELECT * FROM orders WHERE user_id=$user_id ORDER BY order_id DESC LIMIT 1")->fetch_assoc();
-// }
-
-
-
-
 function getLatestOrder($user_id) {
     global $conn;
     $query = "SELECT products.productName, products.product_img, orders.total_price 
@@ -55,15 +44,6 @@ function getLatestOrder($user_id) {
     $stmt->bind_param("i", $user_id);
     $stmt->execute();
     $result = $stmt->get_result();
-
-
-    // echo "<pre>";
-    // print_r($result);
-    // echo "</pre>";
-    
     return $result->fetch_assoc(); 
 }
-
-
-
 ?>

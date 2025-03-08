@@ -11,6 +11,7 @@
 body{
     scroll-behavior: smooth;
      font-family: "Poppins", serif;
+    
 }
 .btn{
     background-color: var(--main-color);
@@ -45,7 +46,9 @@ body{
     box-shadow: none;
   }
   .navbar{
-    position: fixed;
+    position:fixed;
+    top: 0px !important;
+    margin-top: 0px;
     background-color: #ffffff;
     z-index: 4;
     width: 100%;
@@ -53,15 +56,22 @@ body{
   }
 
 /* show prod */
-.img-prod{
+
+
+.img-prod {
     cursor: pointer;
-    /* border-radius: 5px; */
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    height: 200px; 
+    overflow: hidden; 
 }
-.img-prod img{
+
+.img-prod img {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .show-products .prod-details{
     /* background-color: #eee; */
@@ -85,7 +95,7 @@ body{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
 .latest-order-card {
