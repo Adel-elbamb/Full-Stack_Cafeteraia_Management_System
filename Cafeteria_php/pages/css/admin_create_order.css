@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color:#ff5733;
+    --main-color: rgb(153, 128, 101);
     --main-font:"Poppins", serif;
     --sub-font:"Lato", serif;
 }
@@ -12,45 +12,106 @@ body{
     scroll-behavior: smooth;
      font-family: "Poppins", serif;
 }
-.btn{
+
+ /* start nav */
+
+
+
+
+ nav{
     background-color: var(--main-color);
-    color: #eee;
-}
-.btn:hover{
-    background-color: var(--main-color);
-}
-
-
-
-.navbar-brand{
-    color: var(--main-color) !important;
-    font-size: 40px;
-    font-family: var(--main-font);
-    font-weight: 700;
-}
-.navbar-brand:hover{
-    color: var(--main-color);
-}
-.nav-link:hover{
-    color: var(--main-color);
-}
-.nav-link {
-    font-weight: 600;
-}
-.navbar .navbar-toggler{
-    color: var(--main-color);
-    border-color: var(--main-color);
-  } 
-  .navbar .navbar-toggler:focus{
-    box-shadow: none;
-  }
-  .navbar{
-    position: fixed;
-    background-color: #ffffff;
-    z-index: 4;
+    color: aliceblue;
+    position: fixed !important;
+    z-index: 10;
     width: 100%;
-    box-shadow: 0px 0px 2px rgb(205, 202, 202);
-  }
+}
+nav .nav-item a{
+    color: aliceblue !important;
+
+}
+
+.navbar-brand img{
+    height: 70px;
+   
+    
+}
+
+.navbar ul{
+list-style-type: none;
+display: flex;
+gap: 30px;
+font-weight: 600;
+
+}
+.navbar ul i{
+    font-size: 24px;
+    padding-top: 10px;
+    color: aliceblue;
+}
+.navbar ul li a i.lens{
+    color: var(--main-color);
+}
+
+.navbar .btn{
+    color: aliceblue;
+    border: 1px aliceblue solid;
+    padding: 3px;
+   margin-top: 10px;
+    
+}
+  /* end nav */
+  /* drop downs */
+
+.navbar-nav .dropdown-menu {
+  
+    display: none;
+   }
+   nav ul button{
+       border: none !important;
+       background-color: transparent !important;
+       font-family: var(--font-family) !important;
+       font-weight: 600 !important;
+   }
+   nav ul button i{
+       display: none !important;
+   }
+   .dropdown-toggle::after{
+       display: none;
+   }
+   nav .dropdown ul li a{
+       color: var(--main-color) !important;
+       font-weight: 500;
+       text-transform: capitalize;
+   }
+   
+   
+   nav .dropdown ul li a {
+       /* display: block;  */
+       padding: 10px;  
+       transition: color 0.5s ease-in-out; 
+       transition: background-color 0.5s ease-in-out; 
+       font-family: var(--font-family) !important;
+   }
+   
+   nav .dropdown ul li:hover > a {
+       color: #fff !important;
+       background-color: var(--main-color);
+       
+   }
+   nav .dropdown-menu {
+       opacity: 0 !important;
+       transform: translateY(10px) !important; 
+       transition: opacity 0.3s ease, transform 0.3s ease !important;
+       display: block !important; 
+       visibility: hidden !important; 
+   }
+   
+   .dropdown:hover .dropdown-menu {
+       opacity: 1 !important;
+       transform: translateY(0) !important;
+       visibility: visible !important;
+   }
+
 
 /* show prod */
 .img-prod{
@@ -72,54 +133,6 @@ body{
     font-weight: 600;
     color: var(--main-color);
 }
-
-
-/* latest order */
-
-
-
-.latest-order {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.latest-order-card {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 10px;
-}
-
-.latest-order-card img.order-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 3px solid var(--main-color);
-}
-
-.latest-order-details {
-    text-align: left;
-}
-
-.latest-order-details h4 {
-    font-size: 20px;
-    color: var(--main-color);
-}
-
-.latest-order-details p {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-
 
 /* form */
 form {
@@ -144,14 +157,14 @@ select, input {
 }
 
 select:focus, input:focus {
-    border-color: #ff5733;
+    border-color:rgb(3, 37, 65);
     box-shadow: 0 0 8px rgba(255, 87, 51, 0.2);
     outline: none;
 }
 
 .order-conf button {
     width: 100%;
-    background: linear-gradient(to right, #ff5733, #ff8c42);
+    background: linear-gradient(to right, rgb(3, 37, 65), #ff8c42);
     border: none;
     padding: 12px;
     font-size: 18px;
@@ -163,7 +176,7 @@ select:focus, input:focus {
 }
 
 button:hover {
-    background: linear-gradient(to right, #ff8c42, #ff5733);
+    background: linear-gradient(to right, rgb(57, 161, 247),rgb(3, 37, 65));
     transform: scale(1.05);
 }
 .user-cart h3{
@@ -171,12 +184,9 @@ button:hover {
 }
 .user-cart h4{
     /* color: var(--main-color); */
-    /* background-color: black ; */
-    background-color: rgba(91, 187, 187, 0.329);
-    color: #000 ;
-    width: fit-content;
-    margin-left: auto;
-    font-size: 20px;
+    background-color: black ;
+    color: #fff ;
+    font-size: 24px;
     font-weight: 500;
     border-radius: 20px;
     padding: 10px;
@@ -209,7 +219,7 @@ button:hover {
 }
 
 .update-prod-btn{
-    background: linear-gradient(to right, #ff5733, #ff8c42) ;
+    background: linear-gradient(to right, rgb(57, 161, 247),rgb(3, 37, 65));
     border: none;
     padding: 8px 12px;
     font-size: 16px;
@@ -221,13 +231,13 @@ button:hover {
 }
 
 button:hover {
-    background: linear-gradient(to right, #ff8c42, #ff5733);
+    background: linear-gradient(to right, rgb(57, 161, 247),gb(153, 128, 101));
     transform: scale(1.1);
 }
 
 h3 {
     text-align: center;
-    color: #ff5733;
+    color:  rgb(153, 128, 101);
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
@@ -236,8 +246,9 @@ h3 {
 #total {
     font-size: 22px;
     font-weight: bold;
-    color: #ff5733;
+    color:  rgb(153, 128, 101);
 }
+
 
 /* start footer */
 footer{
@@ -247,7 +258,7 @@ footer{
     color: rgb(135, 155, 160);
 }
 footer h4{
-    color: #eee;
+    color: rgb(153, 128, 101);
     font-family: var(--lob);
     font-size: 30px;
     font-weight: 600;
@@ -264,7 +275,7 @@ footer img{
     margin-bottom: 15px;
 }
 footer .fa-brands{
-    color: #eee;
+    color:  rgb(153, 128, 101);
     font-size: 25px;
     padding: 5px;
 }
@@ -272,5 +283,8 @@ footer span{
     color: #eee;
 }
 /* end footer */
+
+
+
 
 

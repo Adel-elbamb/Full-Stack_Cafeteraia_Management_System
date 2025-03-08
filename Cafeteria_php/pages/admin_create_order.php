@@ -1,5 +1,7 @@
+<?php require "../config/config.php" ?>
+
 <?php
-include 'admin_create_order_func.php';
+include '../server/adminP/admin_create_order.php';
 $products = getProducts();
 $rooms = getRooms();
 $users = getUsers();
@@ -14,7 +16,7 @@ $users = getUsers();
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./admin_create_order.css">
+    <link rel="stylesheet" href="./css/admin_create_order.css">
     
 </head>
 <body>
@@ -22,7 +24,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
         <!-- start nav -->
   <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="./imgs/logopop.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="../assets/imgs/logopop.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -206,16 +208,16 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
             <h4>Photo Gallery</h4>
             <div class="row">
               <div class="col-xl-4 col-md-4 col-lg-4">
-                <img src="./imgs/burger.jfif" alt="" class="w-100 ">
-                <img src="./imgs/cheesecake.jfif" alt="" class="w-100 ">
+                <img src="../assets/imgs/burger.jfif" alt="" class="w-100 ">
+                <img src="../assets/imgs/cheesecake.jfif" alt="" class="w-100 ">
               </div>
               <div class="col-xl-4 col-md-4 col-sm-4">
-                <img src="./imgs/coffee.jfif" alt="" class="w-100 ">
-                <img src="./imgs/orangejuice.jfif" alt="" class="w-100 ">
+                <img src="../assets/imgs/coffee.jfif" alt="" class="w-100 ">
+                <img src="../assets/imgs/orangejuice.jfif" alt="" class="w-100 ">
               </div>
               <div class="col-xl-4 col-md-4 col-sm-4">
-                <img src="./imgs/grilledchicken.jfif" alt="" class="w-100 ">
-                <img src="./imgs/pizza.jfif" alt="" class="w-100 ">
+                <img src="../assets/imgs/grilledchicken.jfif" alt="" class="w-100 ">
+                <img src="../assets/imgs/latte.jfif" alt="" class="w-100 ">
               </div>
             </div>
           </div>
@@ -248,7 +250,7 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 crossorigin="anonymous"></script>
 
 
-<script src="./admin_create_order.js"></script>
+<script src="./js/admin_create_order.js"></script>
 </body>
 </html>
 
