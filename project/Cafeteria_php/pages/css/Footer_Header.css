@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --mainBlue:rgb(3, 37, 65); */
+    /* --main-color:rgb(186, 130, 71); */
+    --main-color: rgb(153, 128, 101);
+    --font-family: "Heebo", sans-serif;
+    --font2: "Source Code Pro", serif;
+    --lob: "Lobster Two", sans-serif;
+}
+h1,
+h2,
+h3 {
+    color: var(--main-color);
+}
+nav {
+    background-color: var(--main-color);
+    color: aliceblue;
+    position: fixed !important;
+    z-index: 10;
+    width: 100%;
+}
+nav .nav-item a {
+    color: aliceblue !important;
+}
+/* .navbar-brand{
+    color: rgb(33, 185, 214);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: var(--font-family);
+} */
+.navbar-brand img {
+    height: 70px;
+}
+/* .navbar-brand .shape{
+    display: inline-block;
+  
+width: 65px;
+height: 25px;
+background-color: rgb(33, 185, 214);
+} */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+}
+.navbar ul i {
+    font-size: 24px;
+    padding-top: 10px;
+    color: aliceblue;
+}
+.navbar ul li a i.lens {
+    color: var(--main-color);
+}
+
+.navbar .btn {
+    color: aliceblue;
+    border: 1px aliceblue solid;
+    padding: 3px;
+    margin-top: 10px;
+}
+/* drop downs */
+
+.navbar-nav .dropdown-menu {
+    display: none;
+}
+nav ul button {
+    border: none !important;
+    background-color: transparent !important;
+    font-family: var(--font-family) !important;
+    font-weight: 600 !important;
+}
+nav ul button i {
+    display: none !important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+nav .dropdown ul li a {
+    color: var(--main-color) !important;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+nav .dropdown ul li a {
+    /* display: block;  */
+    padding: 10px;
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    font-family: var(--font-family) !important;
+}
+
+nav .dropdown ul li:hover > a {
+    color: #fff !important;
+    background-color: var(--main-color);
+}
+nav .dropdown-menu {
+    opacity: 0 !important;
+    transform: translateY(10px) !important;
+    transition: opacity 0.3s ease, transform 0.3s ease !important;
+    display: block !important;
+    visibility: hidden !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    visibility: visible !important;
+}
+
+/* start header */
+header {
+    background-image: url(http://localhost/assets/imgs/cover1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    animation: slider 7s infinite;
+    animation-direction: alternate;
+}
+@keyframes slider {
+    0% {
+        background-image: url(http://localhost/assets/imgs/cover1.jpg);
+    }
+    50% {
+        background-image: url(http://localhost/assets/imgs/cover2.jpg);
+    }
+}
+.top-header {
+    height: 10px;
+    background-image: url(http://localhost/assets/imgs/bg-header-top.png);
+    background-position: center;
+    background-repeat: repeat-x;
+}
+.bot-header {
+    height: 20px;
+    background-image: url(http://localhost/assets/imgs/bg-header-bottom.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+header h2 {
+    font-size: 50px;
+    font-weight: 600;
+    /* font-family: var(--font-family); */
+    margin-top: 20px;
+    font-family: var(--lob);
+    text-transform: capitalize;
+    color: #eee;
+}
+header p {
+    color: #eee;
+    font-size: 20px;
+}
+.sec-btn {
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 500;
+    /* margin-left: 30px; */
+}
+.fa-arrow-up {
+    font-size: 25px;
+    background-color: var(--main-color);
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    border-radius: 50%;
+    padding: 10px;
+    color: #eee;
+}
+/* end header */
+
+/* start footer */
+footer {
+    background-color: rgb(16, 55, 65);
+    margin-top: 50px;
+    padding-top: 50px;
+    color: rgb(135, 155, 160);
+}
+footer h4 {
+    color: var(--main-color);
+    font-family: var(--lob);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+footer ul {
+    list-style-type: none;
+    line-height: 2;
+}
+footer img {
+    border-radius: 10px;
+    border: 5px solid var(--main-color);
+    margin-bottom: 15px;
+}
+footer .fa-brands {
+    color: var(--main-color);
+    font-size: 25px;
+    padding: 5px;
+}
+footer span {
+    color: var(--main-color);
+}
+/* end footer */

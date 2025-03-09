@@ -1,0 +1,208 @@
+
+ 
+.navbar {
+    background-color: rgb(153, 128, 101) !important; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 0;
+    height: 70px;
+}
+
+.navbar .nav-item {
+    margin-right: 10px;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: white;
+    box-shadow: 0 4px 6px rgba(157, 155, 155, 0.1);
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icon li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon a,
+.nav-icon button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; 
+}
+
+.nav-icon i {
+    font-size: 18px; 
+}
+ 
+ 
+
+form {
+    width: 100%;
+    max-width: 500px; 
+    padding:  30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px  auto 60px auto;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #dc8e35;
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 142, 53, 0.5);
+}
+.file-input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-input input {
+    flex: 1;
+}
+
+ 
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button[type="submit"] {
+    background-color: rgb(153, 128, 101);
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: #b66f28;
+}
+
+form button[type="reset"] {
+    background-color: #888;
+    color: white;
+}
+
+form button[type="reset"]:hover {
+    background-color: #666;
+}
+ 
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    form button {
+        width: 100%;
+    }
+}
+
+
+.footer-section{
+    background-color: rgb(16, 55, 65);
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgb(135, 155, 160);
+}
+.footer-section h4 {
+    color:rgb(153, 128, 101);
+    font-family: "Lobster Two", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.footer-section ul {
+    list-style-type: none;
+    line-height: 2;
+}
+.footer-section img {
+    border-radius: 10px;
+    border: 5px solid rgb(153, 128, 101);
+    margin-bottom: 15px;
+}
+.footer-section .fa-brands {
+    color: rgb(153, 128, 101);
+    font-size: 25px;
+    padding: 5px;
+}
+.footer-section span {
+    color: rgb(153, 128, 101);
+}
