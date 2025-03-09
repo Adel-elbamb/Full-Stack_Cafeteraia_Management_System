@@ -1,0 +1,74 @@
+
+
+
+body {
+    background-color: #f8f1e4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main Container */
+.admin-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.admin-title {
+    color: #6a4f4b;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.admin-table {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Simple soft shadow */
+    overflow: hidden;
+}
+
+.admin-table thead {
+    background-color: #d4a373;
+    color: white;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f0e1cb;
+}
+
+/* Buttons */
+.admin-btn-primary {
+    background-color: #8b5d33;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.admin-btn-primary:hover {
+    background-color: #5d3a1a;
+}
+
+.admin-btn-secondary {
+    background-color: #6a4f4b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.admin-btn-secondary:hover {
+    background-color: #4a322e;
+}
+table {
+    border: none;
+    border-collapse: collapse; /* Ensures no gaps between table cells */
+}
+
+table td, table th {
+    border: none; /* Removes borders from table cells */
+}
