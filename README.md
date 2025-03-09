@@ -90,7 +90,7 @@ The **Cafeteria Project** is a PHP-based web application designed to streamline 
 ## **Installation**
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/cafeteria-project.git
+   git clone https://github.com/Adel-elbamb/Full-Stack_Cafeteraia_Management_System.git
    ```
 2. Navigate to the project directory:
    ```sh
