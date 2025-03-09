@@ -1,0 +1,134 @@
+ 
+    /* Body styling */
+    body {
+        margin: 0;
+        padding-top: 5%;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Form styling */
+    form {
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 24px;
+    }
+
+    /* Form group styling */
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .form-group input[type="file"] {
+        padding: 5px;
+    }
+
+    /* Add Category link styling */
+    a {
+        color: #dc8e35cc;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* New category input field styling */
+    #newCategoryDiv {
+        display: none;
+        margin-top: 10px;
+    }
+
+    #newCategoryDiv input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        width: 70%;
+    }
+
+    #newCategoryDiv button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #dc8e35cc;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    #newCategoryDiv button:hover {
+        background-color: #a76440;
+    }
+
+    /* Form button styling */
+    .form-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .form-btn button {
+        width: 48%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .form-btn button[type="submit"] {
+        background-color: #dc8e35cc;
+        color: white;
+    }
+
+    .form-btn button[type="submit"]:hover {
+        background-color: #a76440;
+    }
+
+    .form-btn button[type="reset"] {
+        background-color: #dc8e35cc;
+        color: white;
+    }
+
+    .form-btn button[type="reset"]:hover {
+        background-color: #a76440;
+    }
+ 
