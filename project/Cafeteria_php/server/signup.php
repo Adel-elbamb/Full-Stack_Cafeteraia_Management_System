@@ -1,4 +1,3 @@
-<?php require "../include/header.php" ?>
 <?php require "../config/config.php" ?>
 <?php
 session_start();
@@ -96,23 +95,99 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["registerBtn"])) {
 <?php $oldData = $_SESSION["old_data"] ?? []; ?>
 <?php unset($_SESSION["errors"], $_SESSION["old_data"]); ?>
 
-<!-- Normal Breadcrumb Begin -->
-<section class="normal-breadcrumb set-bg" data-setbg="<?php echo APPURL;?>/img/normal-breadcrumb.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="normal__breadcrumb__text">
-                    <h2>Sign Up</h2>
-                    <p>Welcome to the official Anime blog.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Normal Breadcrumb End -->
 
-<!-- Signup Section Begin -->
-<section class="signup spad">
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+      /* Coffee-Themed Signup Page */
+body {
+    background-color: #f3e5d8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+h3 {
+    text-align: center;
+    color: #5c3d2e;
+    font-weight: bold;
+}
+
+.input__item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input__item input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d4a373;
+    border-radius: 5px;
+    background: #fdf7f2;
+    outline: none;
+    font-size: 16px;
+    color: #5c3d2e;
+}
+
+.input__item span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4a373;
+}
+
+button.site-btn {
+    width: 100%;
+    background: #8b5e3b;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.site-btn:hover {
+    background: #5c3d2e;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+h5 a {
+    color: #8b5e3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h5 a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+ 
+
+
+
+
+<section>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -170,7 +245,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["registerBtn"])) {
         </div>
     </div>
 </section>
-<!-- Signup Section End -->
 
-<?php require "../include/footer.php" ?>
+</body>
+</html>
+
+<section class="signup spad">
+
+
 

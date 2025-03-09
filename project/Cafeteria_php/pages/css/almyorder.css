@@ -1,69 +1,20 @@
 /* ***********navbar************************* */
-.navbar {
-    background-color: rgb(153, 128, 101) !important; /* تغيير الخلفية */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin-top: 0;
-    height: 70px;
-}
 
-.navbar .nav-item {
-    margin-right: 10px;
-}
-
-.navbar .dropdown {
-    position: relative;
-}
-
-.navbar .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    background: white;
-    box-shadow: 0 4px 6px rgba(157, 155, 155, 0.1);
-}
-
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
-}
-.nav-icon {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-icon li {
-    display: flex;
-    align-items: center;
-}
-
-.nav-icon a,
-.nav-icon button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #333; 
-}
-
-.nav-icon i {
-    font-size: 18px; 
+:root{
+    /* --mainBlue:rgb(3, 37, 65); */
+    --main-color:rgb(153, 128, 101);
+    --font-family: "Heebo", sans-serif;
+    --font2: "Source Code Pro", serif;
+    --lob:"Lobster Two", sans-serif;
 }
 /* **************************table************************* */
 
 /* *************************Filter************************ */
 
 
-
 #title-page{
     text-align: center;
-    margin-top: 30px;
+    
 }
 
 #filterForm {
@@ -112,6 +63,105 @@
 #filterForm button:hover {
     background: #9c6c35;
 }
+
+
+/* static nuv */
+nav{
+    background-color: var(--main-color);
+    color: aliceblue;
+    /* position: fixed !important; */
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+
+}
+nav .nav-item a{
+    color: aliceblue !important;
+
+}
+
+.navbar-brand img{
+    height: 70px;
+   
+    
+}
+
+.navbar ul{
+list-style-type: none;
+display: flex;
+gap: 30px;
+font-weight: 600;
+
+}
+.navbar ul i{
+    font-size: 24px;
+    padding-top: 10px;
+    color: aliceblue;
+}
+.navbar ul li a i.lens{
+    color: var(--main-color);
+}
+
+.navbar .btn{
+    color: aliceblue;
+    border: 1px aliceblue solid;
+    padding: 3px;
+   margin-top: 10px;
+    
+}
+  /* end nav */
+  /* drop downs */
+
+.navbar-nav .dropdown-menu {
+  
+    display: none;
+   }
+   nav ul button{
+       border: none !important;
+       background-color: transparent !important;
+       font-family: var(--font-family) !important;
+       font-weight: 600 !important;
+   }
+   nav ul button i{
+       display: none !important;
+   }
+   .dropdown-toggle::after{
+       display: none;
+   }
+   nav .dropdown ul li a{
+       color: var(--main-color) !important;
+       font-weight: 500;
+       text-transform: capitalize;
+   }
+   
+   
+   nav .dropdown ul li a {
+       /* display: block;  */
+       padding: 10px;  
+       transition: color 0.5s ease-in-out; 
+       transition: background-color 0.5s ease-in-out; 
+       font-family: var(--font-family) !important;
+   }
+   
+   nav .dropdown ul li:hover > a {
+       color: #fff !important;
+       background-color: var(--main-color);
+       
+   }
+   nav .dropdown-menu {
+       opacity: 0 !important;
+       transform: translateY(10px) !important; 
+       transition: opacity 0.3s ease, transform 0.3s ease !important;
+       display: block !important; 
+       visibility: hidden !important; 
+   }
+   
+   .dropdown:hover .dropdown-menu {
+       opacity: 1 !important;
+       transform: translateY(0) !important;
+       visibility: visible !important;
+   }
+
 /* *************************table************************ */
 table {
     width: 100%;

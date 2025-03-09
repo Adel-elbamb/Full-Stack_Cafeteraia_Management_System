@@ -14,7 +14,8 @@
    }
 
    .custom-title {
-       color:  #A27B5C;
+       color:  #6e4c2f;
+       margin-bottom: 15px;
        font-size: 2em;
        font-weight: bold;
        text-align: center;
@@ -22,7 +23,7 @@
 
    .custom-filter-form {
        /* background: #998065; */
-       background:  #A27B5C; 
+       background:  #9e7d70; 
        border-radius: 5px;
        padding: 15px;
    }
@@ -33,7 +34,7 @@
    }
 
    .custom-btn {
-       background-color:  #A27B5C;
+       background-color:  #6e4c2f;
        color: white;
        border: none;
    }
@@ -50,18 +51,19 @@
 
    .custom-table th, .custom-table td {
        padding: 10px;
-       border: 1px solid  #A27B5C;
+       border: 1px solid  #6e4c2f;
        text-align: center;
    }
 
    .custom-table th {
-       background-color:  #A27B5C;
+       background-color:  #6e4c2f;
        color: white;
    }
 
    .custom-user-link {
        cursor: pointer;
-       color:  #A27B5C;
+       color:  #6e4c2f;
+       /* color:  #A27B5C; */
        font-weight: bold;
    }
 

@@ -60,15 +60,114 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["loginBtn"])) {
     header("Location:/project/Cafeteria_php/server/login.php");
     exit();
 }
-
-
-
 ?>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+  /* Coffee-Themed Login Card */
+body {
+    background-color: #f4e9dc; /* Light coffee background */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h3 {
+    color: #5d4037;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input__item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input__item input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d7ccc8;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input__item input:focus {
+    border-color: #8d6e63;
+    box-shadow: 0 0 5px rgba(141, 110, 99, 0.5);
+}
+
+.site-btn {
+   
+    background-color: #5d4037 ;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.site-btn:hover {
+    background-color: #998065;
+}
+
+.forget_pass {
+    display: block;
+    margin-top: 10px;
+    color: #795548;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forget_pass:hover {
+    text-decoration: underline;
+}
+
+.login__register {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #d7ccc8;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: #8d6e63;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.primary-btn:hover {
+    background-color: #795548;
+}
 
 
 
-<!-- Normal Breadcrumb Begin -->
-<section class="normal-breadcrumb set-bg" data-setbg="/img/normal-breadcrumb.jpg">
+    </style>
+</head>
+<body>
+<!-- <section class="normal-breadcrumb set-bg" data-setbg="/img/normal-breadcrumb.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -79,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["loginBtn"])) {
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Normal Breadcrumb End -->
 
 <!-- Login Section Begin -->
@@ -118,4 +217,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["loginBtn"])) {
     </div>
 </section>
 <!-- Login Section End -->
+
+</body>
+</html>
+
+
+<!-- Normal Breadcrumb Begin -->
 

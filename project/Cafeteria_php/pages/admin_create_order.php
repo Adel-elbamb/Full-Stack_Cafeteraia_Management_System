@@ -23,7 +23,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <body>
 
         <!-- start nav -->
-  <nav class="navbar navbar-expand-lg">
+  <!-- <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="../assets/imgs/logopop.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +96,33 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
            
           </div>
         </div>
-  </nav>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/imgs/logopop.png" alt="Logo" style="width: 100px; height: 60px;">
+        </a>
+        <a class="navbar-toggler" href="#">
+            <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../pages/admin_create_order.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/allProducts.php">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/allUser.php">Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/admin_orders.php">Manual Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/check.php">Checks</a></li>
+            </ul>
+            <ul class="nav-icon">
+                <li><a href="#"><i class="fa-solid fa-plus"></i></a></li>
+                <li><a href="#" class="btn">EN</a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass lens"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav> 
   <!-- end nav -->
 
         <!-- show products -->
